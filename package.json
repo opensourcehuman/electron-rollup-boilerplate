@@ -1,0 +1,44 @@
+{
+  "author": {
+    "email": "name@example.com",
+    "name": "Your Name Here"
+  },
+  "bugs": {
+    "url": "https://domain.tld/bugs"
+  },
+  "dependencies": {
+    "rollup-plugin-commonjs": "^9.1.6"
+  },
+  "description": "A super simple and lightweight starting point for your Electron-based app.",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "electron": "~2.0.9",
+    "electron-builder": "^20.28.4",
+    "electron-reloader": "^0.2.0",
+    "npm-run-all": "^4.1.3",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "4.0.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify": "^5.0.2",
+    "sass": "^1.13.4"
+  },
+  "homepage": "https://domain.tld",
+  "main": "build/main.js",
+  "name": "your-app-name",
+  "private": true,
+  "scripts": {
+    "build": "rollup --config && npm run css",
+    "css": "sass --update src/sass:build --style compressed",
+    "pack": "npm run build && electron-builder --dir",
+    "package": "electron-builder",
+    "start": "npm run build && run-s start:*",
+    "start:electron": "electron .",
+    "watch": "npm run build && run-p watch:*",
+    "watch:development": "rollup --config --watch",
+    "watch:electron": "electron .",
+    "watch:sass": "sass --watch src/sass:build --style compressed"
+  },
+  "version": "0.0.0"
+}

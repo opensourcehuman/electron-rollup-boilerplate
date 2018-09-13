@@ -1,0 +1,12 @@
+appId: com.yourcompany.yourappname
+artifactName: "${productName}-${os}-${arch}-${version}.${ext}"
+asar: true
+compression: maximum
+copyright: "Copyright © Year Your Name Here"
+directories:
+  output: releases
+files:
+  - "src/"
+  - "node_modules/"
+  - "package.json"
+productName: Your App Name
