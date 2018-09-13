@@ -4,7 +4,7 @@
 
 ## Features
 
-- Windows build
+- Windows build using [electron-builder](https://github.com/electron-userland/electron-builder)
 - [Babel](https://babeljs.io) transpiler
 - JS bundling using [rollup](https://rollupjs.org)
 - [Dart Sass](https://github.com/sass/dart-sass) to bundle SASS files into single CSS
