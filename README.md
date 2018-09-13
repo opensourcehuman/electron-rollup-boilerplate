@@ -28,6 +28,6 @@
 
 - `yarn package`
 
-##What is not included
+## What is not included
 
 There is no testing library or framework included. Install your own according to personal preferences.
